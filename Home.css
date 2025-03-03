@@ -1,0 +1,493 @@
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+main {
+    background-image: url(photo/min.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 765px;
+}
+.main-h1  {
+    font-size: 72px;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: end;
+    line-height: 1.2;
+}
+.main-h5  {
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: end;
+}
+.main-h1:first-letter  {
+    font-size: 110px;
+    color: rgba(89, 80, 76, 0.85);
+}
+.main-content {
+        display: inline-block;
+        margin: 200px 200px 60px 700px;
+
+}
+.content-wrapper {
+    height: 1607px;
+    background-color: rgb(222, 217, 215);
+    position: relative;
+    z-index: 0;
+}
+.block-wrapper {
+    background-color: rgb(89, 80, 76);
+    height: 328px;
+    position: absolute;
+    top: 450px;
+    width: 100%;z-index: 0;
+}
+.card-block{
+    z-index: 1;
+    position: relative;
+    left: 360px;
+    height: 929px;width: 1166px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-block-column:nth-child(2) .card-block-inside {
+    position: absolute;
+    top: 180px;
+}
+.card-block-column:nth-child(3) .card-block-inside {
+    position: absolute;
+    top: 280px;
+}
+.card-block-column{
+    height: 929px;width: 388px;
+    display: flex;
+    justify-content: center;
+}
+.card-block-inside{
+    background-color: #fff;
+    width: 362px;height: 634px;
+    position: relative;
+    top: 70px;
+    border-radius: 10px;
+    box-sizing: border-box; /* Включает отступы и рамки в расчёт ширины/высоты */
+    overflow: hidden; /* Обрезает содержимое, выходящее за границы */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    /*img:hover{*/
+    /*    transform: scale(2.2);*/
+    /*    transition: 3s ease;*/
+    /*}*/
+}
+.card-block-img {
+    width: 302px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+    img {
+        transform: scale(1);
+        transition: transform 2s ease;
+    }
+    img:hover {
+        transform: scale(1.3);
+        transition: transform 1.5s ease;
+    }
+} /*Animation transition transform*/
+
+h2 {
+    color: rgb(17, 17, 17);
+    font-size: 3.61111rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 60px;
+    font-family: "Times New Roman", Times, serif;
+}
+p {
+    color: rgb(17, 17, 17);
+    font-size: 1.27778rem;
+    width: 778px;
+    margin: 16px auto 0;
+    text-align: center;
+    font-family:Poppins,serif;
+}
+a {
+    color: rgb(17, 17, 17);
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+h4{
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+    color:rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif ;
+    text-align: inherit;
+}
+h3 {
+    font-size: 1.875rem;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: Poppins, serif;
+}
+
+.info-block {
+    height: 1082px;
+    background-color: #f7f5f5;
+    img {
+        width: 844px;
+        height: 563px;
+        position: relative;
+        left: 500px;
+        top: -251px;
+        border-radius: 20px;
+    }
+}
+.info-block-item {
+    width: 442px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #332c29;
+    position: relative;
+    top: -400px;
+    left: 380px;
+}
+.info-block-item2 {
+    background-color: rgb(255, 255, 255);
+    width: 598px;
+    min-height: 426px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+    color: #111111;
+    border-radius: 20px;
+    padding: 30px 50px 30px 40px;
+    position: relative;
+    top: -720px;
+    left: 920px;
+    ol{
+        margin-top: 33px;
+        font-size: 1rem;
+        line-height: 2;
+        mso-level-text: 1px;
+        font-weight: 400;
+        padding-left: 20px;
+        li{
+            font-family: "Open Sans", sans-serif ;
+
+        }
+    }
+    a {
+        background-image: none;
+        border-style: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.875rem;
+        margin: 28px auto 0 0;
+        padding: 11px 35px 13px 33px;
+        color: #ffffff;
+        background-color: #59504c;
+        border-radius: 20px;
+        display: block;
+        width: 208px;
+        &:hover{
+            background-color: rgba(141, 102, 85, 0.35);
+            color: #1c1b1b;
+        }
+    }
+}
+
+.table-block {
+    width: 905px;
+    height: 1034px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 30px;
+    position: relative;
+    left: 500px;
+    top: -375px;
+    img {
+        width: 437px;
+        height: 487px;
+        border-radius: 20px;
+    }
+    div {
+        width: 437px;
+        height: 487px;
+        background-color: #fff;
+        a{
+            border-bottom: #111111 1px solid;
+        }
+        .button {
+            background-image: none;
+            border-style: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.875rem;
+            margin: 28px auto 0 0;
+            padding: 11px 35px 13px 33px;
+            color: #ffffff;
+            background-color: #59504c;
+            border-radius: 20px;
+            display: block;
+            width: 208px;
+            text-align: start;
+            text-decoration: none;
+            &:hover{
+                background-color: rgba(141, 102, 85, 0.35);
+                color: #1c1b1b;
+            }
+        }
+        p{
+            text-align: start;
+            width: 376px;
+        }
+        h3 {
+            color: #111111;
+            text-align: start;
+            margin-top: 30px;
+        }
+        p:nth-of-type(1) {
+            font-size: 1rem;
+            line-height: 1.6;
+            text-align: start;
+        }
+        padding: 30px;
+        border-radius: 20px;
+    }
+}
+.info-block-tables {
+    width: 100%;
+    height: 1555px;
+    background-color: #59504c;
+    color: #ffffff;
+    padding-top: 50px;
+    .catface {
+        width: 220px;
+        height: 220px;
+        background-image: url(photo/catface.jpg);
+        margin: -250px auto 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        border: #c6beba solid 10px;
+    }
+    .table-block-wrapper {
+        width: 700px;
+        margin: 0 auto;
+        h2 {
+            font-size: 3rem;
+            width: 689px;
+            margin: 0 auto 50px;
+            line-height: 1.1;
+            font-weight: 700;
+            color: #fff;
+        }
+        p {
+            color: rgb(255, 255, 255);
+            display: block;
+            font-size:0.875rem;
+            letter-spacing:  1px;
+            line-height: 2;
+            width: 589px;
+            a {
+                color: inherit;
+                border-bottom: white solid 1px;
+            }
+        }
+        .email {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            position: relative;
+
+            #email-place {
+                width: 132px;
+                height: 50px;
+                border-radius: 50px;
+                border: 1px solid rgba(97, 97, 97, 0.69);
+                padding: 10px 12px;
+                margin-right: 15px;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:invalid:focus {
+                    border: 3px solid red;
+                }
+
+                &:valid {
+                    border: 3px solid green;
+                }
+            }
+
+            .error-message {
+                display: none;
+                font-size: 1.2em;
+                color: red;
+                position: absolute;
+                bottom: 60px;
+            }
+
+            #email-place:invalid:focus + .error-message {
+                display: block;
+            }
+
+            label {
+                button {
+                    color: #fff;
+                    background-color: #837974;
+                    width: 375px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    border-radius: 50px;
+                    font-size: 1rem;
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    border: none;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #645c58;
+                        background-color: #cec4bb;
+                    }
+                }
+            }
+        }
+
+    }
+}
+.footer-spacer {
+    height: 50px;
+    background-color: rgb(222, 217, 215)
+}
+
+footer {
+    background-color: #111111; /* Темный фон для футера */
+    color: #fff; /* Белый цвет текста */
+    padding: 50px 0; /* Увеличенные отступы сверху и снизу футера */
+    font-family: 'Poppins', sans-serif;
+
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 60px; /* Увеличенное расстояние между секциями */
+        max-width: 1500px; /* Максимальная ширина */
+        margin: 0 auto; /* Центрирование футера */
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px; /* Минимальная ширина секции */
+
+            h4 {
+                font-size: 1.5rem;
+                margin-bottom: 15px; /* Уменьшенный отступ снизу для заголовка */
+                font-weight: 600;
+                color: #f7f7f7; /* Светлый цвет заголовка */
+            }
+
+            p,
+            ul {
+                font-size: 1.1rem;
+                color: #f7f7f7;
+                line-height: 1.6;
+                margin-bottom: 20px; /* Увеличенный отступ снизу для абзацев и списков */
+                text-align: left;
+            }
+
+            a {
+                color: #f7f7f7;
+                text-decoration: none;
+                transition: color 0.3s ease;
+
+
+            }
+
+            ul {
+                list-style: none;
+                padding-left: 0;
+
+                li {
+                    margin: 10px 0;
+                }
+            }
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 30px; /* Увеличенный отступ между иконками социальных сетей */
+
+            img {
+                width: 40px; /* Увеличенные иконки социальных сетей */
+                height: 40px;
+                transition: opacity 0.3s ease;
+
+                &:hover {
+                    opacity: 0.8; /* Эффект прозрачности при наведении на иконки */
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        text-align: center; /* Центрируем текст */
+        margin-top: 40px; /* Уменьшенный отступ сверху */
+        background-color: #333333; /* Темный фон для нижней части футера */
+        padding: 20px;
+        font-size: 1rem;
+
+        p {
+            color: #e0e0e0; /* Светло-серый цвет текста */
+            margin: 0 auto;
+        }
+    }
+}
+
+@keyframes yellowtext {
+    50% { color: #e1daaa; }
+    100% { color: #ffffff; }
+}
+.animation-text {
+    animation: yellowtext 20s infinite;
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+}
+.animation-anchor a:hover {
+    animation: rainbow 7s infinite;
+}
+
+@keyframes RotateCircles {
+    0% {
+        transform: rotate(0deg) translateX(0) translateY(0); /* Начальная позиция */
+    }
+    100% {
+        transform: rotate(360deg) translateX(0) translateY(0); /* Завершение полного круга */
+    }
+}
+.catface:hover {
+    animation: RotateCircles 1s linear infinite; /* Анимация движения */
+}
